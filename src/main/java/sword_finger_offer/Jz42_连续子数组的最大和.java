@@ -19,7 +19,7 @@ package sword_finger_offer;
  * 1 <= arr.length <= 10^5
  * -100 <= arr[i] <= 100
  */
-public class Jz42连续子数组的最大和 {
+public class Jz42_连续子数组的最大和 {
     /**
      * opt(0) = -2;
      *
@@ -36,6 +36,6 @@ public class Jz42连续子数组的最大和 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Jz42连续子数组的最大和().maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+        System.out.println(new Jz42_连续子数组的最大和().maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
     }
 }

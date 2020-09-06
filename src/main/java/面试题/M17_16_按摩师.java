@@ -22,7 +22,7 @@ package 面试题;
  * 输出： 12
  * 解释： 选择 1 号预约、 3 号预约和 5 号预约，总时长 = 2 + 9 + 1 = 12。
  */
-public class M17_16按摩师 {
+public class M17_16_按摩师 {
     /**
      * dp[0] = nums[0];
      * dp[1] = max(dp[0], nums[1]);
@@ -45,6 +45,6 @@ public class M17_16按摩师 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new M17_16按摩师().massage(new int[]{2, 1, 4, 5, 3, 1, 1, 3}));
+        System.out.println(new M17_16_按摩师().massage(new int[]{2, 1, 4, 5, 3, 1, 1, 3}));
     }
 }

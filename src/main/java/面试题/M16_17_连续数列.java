@@ -16,7 +16,7 @@ package 面试题;
  * <p>
  * 如果你已经实现复杂度为 O(n) 的解法，尝试使用更为精妙的分治法求解。
  */
-public class M16_17连续数列 {
+public class M16_17_连续数列 {
     public int maxSubArray(int[] nums) {
         int max = nums[0];
         for (int i = 1; i < nums.length; i++) {
