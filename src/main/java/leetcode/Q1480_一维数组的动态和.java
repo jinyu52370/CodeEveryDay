@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /**
  * @author <a href="jinyu52370@163.com">JJJ</a>
  * @date 2020/9/10 23:53
@@ -29,10 +31,18 @@ package leetcode;
  */
 public class Q1480_一维数组的动态和 {
     public int[] runningSum(int[] nums) {
-        return null;
+        if (nums == null || nums.length == 0 || nums.length == 1) {
+            return nums;
+        }
+        int[] runningSum = new int[nums.length];
+        runningSum[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            runningSum[i] = runningSum[i - 1] + nums[i];
+        }
+        return runningSum;
     }
 
     public static void main(String[] args) {
-
+        System.out.println(Arrays.toString(new Q1480_一维数组的动态和().runningSum(new int[]{3, 1, 2, 10, 1})));
     }
 }
