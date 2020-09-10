@@ -34,12 +34,10 @@ public class Q1480_一维数组的动态和 {
         if (nums == null || nums.length == 0 || nums.length == 1) {
             return nums;
         }
-        int[] runningSum = new int[nums.length];
-        runningSum[0] = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            runningSum[i] = runningSum[i - 1] + nums[i];
+            nums[i] += nums[i - 1];
         }
-        return runningSum;
+        return nums;
     }
 
     public static void main(String[] args) {
