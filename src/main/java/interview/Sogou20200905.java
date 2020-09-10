@@ -4,9 +4,9 @@ package interview;
  * @author <a href="jinyu52370@163.com">JJJ</a>
  * @date 2020/9/5 20:34
  */
-public class Sogou20200905Q1 {
+public class Sogou20200905 {
     public static void main(String[] args) {
-        System.out.println(new Sogou20200905Q1().numberOfPrize(1, 9, 3));
+        System.out.println(new Sogou20200905().numberOfPrize(1, 9, 3));
     }
 
     public int numberOfPrize(int a, int b, int c) {
