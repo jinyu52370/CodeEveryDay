@@ -1,7 +1,6 @@
 package sword_finger_offer;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * @author <a href="jinyu52370@163.com">JJJ</a>
@@ -22,7 +21,7 @@ import java.util.Arrays;
  * 限制：
  *  2 <= n <= 100000
  */
-public class JZ3_数组中重复的数字 {
+public class JZ03_数组中重复的数字 {
     public int findRepeatNumber(int[] nums) {
         if (nums.length == 2) {
             return nums[0];
@@ -49,6 +48,6 @@ public class JZ3_数组中重复的数字 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new JZ3_数组中重复的数字().findRepeatNumber1(new int[]{1, 3, 2, 0, 2, 5, 3}));
+        System.out.println(new JZ03_数组中重复的数字().findRepeatNumber1(new int[]{1, 3, 2, 0, 2, 5, 3}));
     }
 }
