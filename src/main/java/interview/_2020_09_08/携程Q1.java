@@ -1,4 +1,4 @@
-package interview;
+package interview._2020_09_08;
 
 
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ import java.util.Scanner;
  * 样例输出
  * i love jack,jack love me
  */
-public class Xiecheng20200908Q1 {
+public class 携程Q1 {
     private static void findAllKey(char[] arr, int i, StringBuffer buffer, ArrayList<String> list) {
         if (i >= arr.length) {
             for (char c : arr) {

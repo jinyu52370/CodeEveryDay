@@ -1,10 +1,10 @@
-package interview;
+package interview._2020_09_12;
 
 /**
  * @author <a href="jinyu52370@163.com">JJJ</a>
  * @date 2020/9/12 10:21
  */
-public class Qianxin20200912Q1 {
+public class 奇安信Q1 {
 
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
@@ -56,6 +56,6 @@ public class Qianxin20200912Q1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Qianxin20200912Q1().maxCandies(new int[]{3, 5, 7, 2, 8, 8, 15, 3}, new int[]{1, 0, 1, 0, 1, 0, 1, 0}, 3));
+        System.out.println(new 奇安信Q1().maxCandies(new int[]{3, 5, 7, 2, 8, 8, 15, 3}, new int[]{1, 0, 1, 0, 1, 0, 1, 0}, 3));
     }
 }

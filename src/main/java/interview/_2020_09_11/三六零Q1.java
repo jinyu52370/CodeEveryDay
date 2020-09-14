@@ -1,4 +1,4 @@
-package interview;
+package interview._2020_09_11;
 
 import java.util.Scanner;
 
@@ -44,7 +44,7 @@ import java.util.Scanner;
  * 范围：|s|<=100，数据组数不会超过20
  * 样例解释：第二组密码没有特殊字符，第三组密码没有小写字母，第四组密码没有数字，第五组密码长度不够
  */
-public class I36020200911Q1 {
+public class 三六零Q1 {
     public static String solution(String str){
         String error = "Irregular password";
         if (str == null || str.length() < 8) {

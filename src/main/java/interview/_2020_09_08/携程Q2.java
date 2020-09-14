@@ -1,4 +1,4 @@
-package interview;
+package interview._2020_09_08;
 
 import jdk.nashorn.internal.ir.CallNode;
 
@@ -70,7 +70,7 @@ import java.util.Scanner;
  *
  * 根据单个字符的下标index排序， 结果的排序:  Comparator.naturalOrder()
  */
-public class Xiecheng20200908Q2 {
+public class 携程Q2 {
     static class Node{
         String val;
         ArrayList<Node> list = new ArrayList<>();

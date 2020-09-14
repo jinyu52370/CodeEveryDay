@@ -1,4 +1,4 @@
-package interview;
+package interview._2020_09_11;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -49,7 +49,7 @@ import java.util.Scanner;
  * 样例只有可能是一种情况：3号上班，2号上班，1号上班，2号下班，1号下班，3号下班。所以小A一定是3号。
  * 样例二解释：1可能是小A，因为2345号员工可能都请假了。
  */
-public class I36020200911Q2 {
+public class 三六零Q2 {
     public int[] solution(int[][] table){
         int n = table[0][0], m = table[0][1];
         int[] arr;
@@ -105,6 +105,6 @@ public class I36020200911Q2 {
             i++;
         }
         System.out.println(Arrays.deepToString(arr));
-        System.out.println(Arrays.toString(new I36020200911Q2().solution(arr)));
+        System.out.println(Arrays.toString(new 三六零Q2().solution(arr)));
     }
 }

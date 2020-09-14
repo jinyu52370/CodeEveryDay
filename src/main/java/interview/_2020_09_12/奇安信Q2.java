@@ -1,4 +1,4 @@
-package interview;
+package interview._2020_09_12;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author <a href="jinyu52370@163.com">JJJ</a>
  * @date 2020/9/12 10:58
  */
-public class Qianxin20200912Q2 {
+public class 奇安信Q2 {
     /**
      * 获得剩余区域内的最大干净矩形面积
      *
@@ -28,6 +28,6 @@ public class Qianxin20200912Q2 {
     }
 
     public static void main(String[] args) {
-        new Qianxin20200912Q2().getMaxArea(0, 0, 0, 0, 0, 0, 0, 0);
+        new 奇安信Q2().getMaxArea(0, 0, 0, 0, 0, 0, 0, 0);
     }
 }
