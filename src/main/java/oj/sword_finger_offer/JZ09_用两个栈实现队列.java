@@ -12,22 +12,22 @@ import java.util.Stack;
  * (若队列中没有元素，deleteHead 操作返回 -1 )
  *
  * 示例 1：
- *  输入：
- *      ["CQueue","appendTail","deleteHead","deleteHead"]
- *      [[],[3],[],[]]
- *  输出：
- *      [null,null,3,-1]
+ * 输入：
+ * ["CQueue","appendTail","deleteHead","deleteHead"]
+ * [[],[3],[],[]]
+ * 输出：
+ * [null,null,3,-1]
  *
  * 示例 2：
- *  输入：
- *      ["CQueue","deleteHead","appendTail","appendTail","deleteHead","deleteHead"]
- *      [[],[],[5],[2],[],[]]
- *  输出：
- *      [null,-1,null,null,5,2]
+ * 输入：
+ * ["CQueue","deleteHead","appendTail","appendTail","deleteHead","deleteHead"]
+ * [[],[],[5],[2],[],[]]
+ * 输出：
+ * [null,-1,null,null,5,2]
  *
  * 提示：
- *  1 <= values <= 10000
- *  最多会对 appendTail、deleteHead 进行 10000 次调用
+ * 1 <= values <= 10000
+ * 最多会对 appendTail、deleteHead 进行 10000 次调用
  */
 public class JZ09_用两个栈实现队列 {
     class CQueue {

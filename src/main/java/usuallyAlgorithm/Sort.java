@@ -11,41 +11,41 @@ public class Sort {
         int[] array = {1, 4, 7, 3, 9, 11, 222, -1, -2, 666, -98, 20};
 
 //        System.out.println(Arrays.toString(new Sort().quickSort(array)));
-//        System.out.println(Arrays.toString(new Sort().mergeSort(array)));
-        System.out.println(Arrays.toString(new Sort().heapSort(array)));
+        System.out.println(Arrays.toString(new Sort().mergeSort(array)));
+//        System.out.println(Arrays.toString(new Sort().heapSort(array)));
     }
 
     //region 快排
-    public int[] quickSort(int[] array) {
-        if (array == null || array.length == 0) {
-            return array;
+    public int[] quickSort(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return arr;
         }
-        quickSort(array, 0, array.length - 1);
-        return array;
+        quickSort(arr, 0, arr.length - 1);
+        return arr;
     }
 
-    private void quickSort(int[] array, int left, int right) {
-        int pivot = array[(left + right) / 2];
+    private void quickSort(int[] arr, int left, int right) {
+        int pivot = arr[(left + right) / 2];
         int l = left, r = right;
-        while (l < r) {
-            while (array[l] < pivot) {
+        while (l < r){
+            while (arr[l] < pivot){
                 l++;
             }
-            while (array[r] > pivot) {
+            while (arr[r] > pivot){
                 r--;
             }
             if (l == r) {
                 break;
             }
 
-            int temp = array[l];
-            array[l] = array[r];
-            array[r] = temp;
+            int temp = arr[l];
+            arr[l] = arr[r];
+            arr[r] = temp;
 
-            if (array[l] == pivot) {
+            if (arr[l] == pivot) {
                 r--;
             }
-            if (array[r] == pivot) {
+            if (arr[r] == pivot) {
                 l++;
             }
         }
@@ -54,46 +54,48 @@ public class Sort {
             r--;
         }
         if (left < r) {
-            quickSort(array, left, l);
+            quickSort(arr, left, r);
         }
         if (l < right) {
-            quickSort(array, l, right);
+            quickSort(arr, l, right);
         }
+
     }
+
     //endregion
 
     //region 归并
-    public int[] mergeSort(int[] array) {
-        if (array == null || array.length == 0) {
-            return array;
+    public int[] mergeSort(int[] arr){
+        if (arr == null || arr.length == 0) {
+            return arr;
         }
-        merge(array, new int[array.length], 0, array.length - 1);
-        return array;
+        merge(arr, new int[arr.length], 0, arr.length - 1);
+        return arr;
     }
 
-    private void merge(int[] array, int[] temp, int left, int right) {
+    private void merge(int[] arr, int[] temp, int left, int right) {
         if (left == right) {
             return;
         }
         int mid = left + (right - left) / 2;
-        merge(array, temp, left, mid);
-        merge(array, temp, mid + 1, right);
-        sort(array, temp, left, mid, right);
+        merge(arr, temp, left, mid);
+        merge(arr, temp, mid + 1, right);
+        sort(arr, temp, left, mid, right);
     }
 
-    private void sort(int[] array, int[] temp, int left, int mid, int right) {
+    private void sort(int[] arr, int[] temp, int left, int mid, int right) {
         int p1 = left, p2 = mid + 1, k = left;
-        while (p1 <= mid && p2 <= right) {
-            temp[k++] = array[p1] <= array[p2] ? array[p1++] : array[p2++];
+        while (p1 <= left && p2 <= right) {
+            temp[k++] = arr[p1] <= arr[p2] ? arr[p1++] : arr[p2++];
         }
-        while (p1 <= mid) {
-            temp[k++] = array[p1++];
+        while (p1 <= mid){
+            temp[k++] = arr[p1++];
         }
-        while (p2 <= right) {
-            temp[k++] = array[p2++];
+        while (p2 <= right){
+            temp[k++] = arr[p2++];
         }
         for (int i = left; i <= right; i++) {
-            array[i] = temp[i];
+            arr[i] = temp[i];
         }
     }
     //endregion
